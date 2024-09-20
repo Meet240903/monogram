@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "../../assets/styles/download/monogramcreator.css";
-import { FaApple, FaBars, FaWindows, faBars } from "react-icons/fa"; // Import icons
+import { FaApple, FaBars, FaWindows } from "react-icons/fa"; // Import icons
 
 const MonogramCreator = () => {
 	const [activeTab, setActiveTab] = useState("monogram");
@@ -12,19 +12,23 @@ const MonogramCreator = () => {
 	};
 
 	const toggleMenu = () => {
-		setMenuOpen(!menuOpen);
+		setMenuOpen(!menuOpen); // Toggle the menu state
 	};
 
 	return (
 		<div className="container_monogram">
+			{/* Menu button for mobile */}
 			<div
 				className={`menu-button_monogram ${menuOpen ? "open" : ""}`}
-				onClick={toggleMenu}
+				onClick={toggleMenu} // Toggle menu visibility on click
 			>
-				Release selected items
-				{"  "} <FaBars />
+				<p>Release selected items</p>
+				<p>
+					<FaBars className="menu_icon_monogram" />
+				</p>
 			</div>
 
+			{/* Links container with toggle functionality */}
 			<div className={`links-container_monogram ${menuOpen ? "show" : ""}`}>
 				<div
 					className={`link_monogram ${
@@ -48,6 +52,7 @@ const MonogramCreator = () => {
 				</div>
 			</div>
 
+			{/* Content based on active tab */}
 			<div className="content_monogram">
 				{activeTab === "monogram" && (
 					<div className="content-box_monogram">
@@ -77,11 +82,7 @@ const MonogramCreator = () => {
 						<p>
 							Get access to an exclusive technical preview of Monogram Creator.
 							Help shape our next generation of software by sharing feedback,
-							bug reports, and feature requests. Creator Beta can be installed
-							alongside the standard Monogram Creator, but we do recommend
-							periodically saving your profiles just in case. Thank you for
-							joining us in creating something wonderful for creatives around
-							the world.
+							bug reports, and feature requests.
 						</p>
 						<div className="icon-section">
 							<FaApple className="icon_monogram" />

@@ -16,30 +16,33 @@ const Header = () => {
 	const [menuOpen, setMenuOpen] = useState(false); // State to handle menu open/close
 
 	return (
-		<header className="header">
-			<div className="navbar">
+		<header className="header-container">
+			<div className="navbar-container">
 				{/* Left side: Logo */}
-				<div className="logo">
+				<div className="logo-container">
 					<FontAwesomeIcon icon={faRadio} size="2x" />
-					<Link to="/" className="logo">
+					<Link to="/" className="logo-container">
 						monogram
 					</Link>
 				</div>
 
 				{/* Hamburger Menu Icon for mobile */}
-				<div className="menu-toggle" onClick={() => setMenuOpen(!menuOpen)}>
+				<div
+					className="menu-toggle-container"
+					onClick={() => setMenuOpen(!menuOpen)}
+				>
 					<FontAwesomeIcon icon={menuOpen ? faTimes : faBars} size="2x" />
 				</div>
 
 				{/* Right side: Navigation */}
-				<ul className={`nav-links ${menuOpen ? "active" : ""}`}>
+				<ul className={`nav-links-container ${menuOpen ? "active" : ""}`}>
 					<li>
 						<Link to="/howitwork">
 							<a href="#how-it-works">How it Works</a>
 						</Link>
 					</li>
 					<li
-						className="submenu"
+						className="submenu-container"
 						onMouseEnter={() => setShowWorkflowMenu(true)}
 						onMouseLeave={() => setShowWorkflowMenu(false)}
 					>
@@ -50,7 +53,7 @@ const Header = () => {
 							/>
 						</a>
 						{showWorkflowMenu && (
-							<ul className="dropdown">
+							<ul className="dropdown-container">
 								<li>
 									<a href="#audio">Audio</a>
 								</li>
@@ -72,7 +75,10 @@ const Header = () => {
 						</Link>
 					</li>
 					<li>
-						<a href="#blog">Blog</a>
+						{" "}
+						<Link to="/blog">
+							<a href="#blog">Blog</a>
+						</Link>
 					</li>
 					<li>
 						<a href="#support">Support</a>
@@ -81,7 +87,7 @@ const Header = () => {
 						<a href="#shop">Shop</a>
 					</li>
 					<li
-						className="submenu"
+						className="submenu-container"
 						onMouseEnter={() => setShowCurrencyMenu(true)}
 						onMouseLeave={() => setShowCurrencyMenu(false)}
 					>
@@ -92,7 +98,7 @@ const Header = () => {
 							/>
 						</a>
 						{showCurrencyMenu && (
-							<ul className="dropdown">
+							<ul className="dropdown-container">
 								<li>
 									<a href="#usd">USD</a>
 								</li>

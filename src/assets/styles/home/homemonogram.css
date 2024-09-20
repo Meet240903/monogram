@@ -1,70 +1,141 @@
-/* Scroll Container */
-.scroll-container-monogram {
+.home-page-why-monogram-section-container {
   display: flex;
+  height: 100vh; /* Full viewport height */
+  overflow: hidden; /* Prevents the entire page from scrolling */
+}
+
+.home-page-why-monogram-section-left-content,
+.home-page-why-monogram-section-right-content {
+  width: 50%; /* 50% width for both columns */
+  overflow-y: scroll; /* Enable vertical scrolling for both columns */
+  height: 100vh; /* Full viewport height */
+  padding: 0;
+  scrollbar-width: none;
+}
+
+.home-page-why-monogram-section-left-content::-webkit-scrollbar,
+.home-page-why-monogram-section-right-content::-webkit-scrollbar {
+  display: none; /* For Chrome, Safari, and Opera */
+}
+
+.home-page-why-monogram-section-left-content-img1 {
+  background-color: rgb(26, 36, 86);
   width: 100%;
-  height: 200vh;
-  /* Extend the height to allow scrolling */
-  position: relative;
+  height: 600px;
+  text-align: right;
 }
 
-/* Left Column */
-.left-column-monogram {
-  width: 50%;
-  position: relative;
-}
-
-.left-column-monogram .image {
+.home-page-why-monogram-section-left-content-img2 {
+  background-color: rgb(255, 141, 107);
   width: 100%;
-  height: auto;
-  object-fit: cover;
-  margin-bottom: 20px;
+  height: 600px;
+  text-align: right;
 }
 
-.left-column-monogram .image.stopped {
-  position: sticky;
-  top: 0;
-  /* Make it sticky at the top */
-}
-
-.left-column-monogram .image.scrolling {
-  position: relative;
-}
-
-/* Right Column */
-.right-column-monogram {
-  width: 50%;
-  position: relative;
-}
-
-.right-column-monogram .image {
+.home-page-why-monogram-section-left-content-img3 {
+  background-color: rgb(90, 127, 113);
   width: 100%;
-  height: auto;
-  object-fit: cover;
-  margin-bottom: 20px;
+  height: 600px;
+  text-align: right;
 }
 
-.right-column-monogram .image.stopped {
-  position: sticky;
-  top: 0;
-  /* Make it sticky at the top */
+.home-page-why-monogram-section-right-content-img1 {
+  background-color: rgb(255, 141, 107);
+  width: 100%;
+  height: 600px;
+  text-align: left;
 }
 
-.right-column-monogram .image.scrolling {
-  position: relative;
+.home-page-why-monogram-section-right-content-img2 {
+  background-color: rgb(90, 127, 113);
+  width: 100%;
+  height: 600px;
+  text-align: left;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-  .scroll-container-monogram {
-    flex-direction: column;
+.home-page-why-monogram-section-right-content-img3 {
+  background-color: rgb(245, 179, 53);
+  width: 100%;
+  height: 600px;
+  text-align: left;
+}
+
+.home-page-why-monogram-section-left-content-img1 img,
+.home-page-why-monogram-section-left-content-img2 img,
+.home-page-why-monogram-section-left-content-img3 img,
+.home-page-why-monogram-section-right-content-img1 img,
+.home-page-why-monogram-section-right-content-img2 img,
+.home-page-why-monogram-section-right-content-img3 img {
+  height: 600px;
+}
+
+.home-page-why-monogram-section-left-content-details1,
+.home-page-why-monogram-section-left-content-details2,
+.home-page-why-monogram-section-right-content-details1,
+.home-page-why-monogram-section-right-content-details2 {
+  background-color: #efc2b3;
+  height: 600px;
+  padding: 10rem 5rem;
+}
+
+.home-page-why-monogram-section-left-content-details1 h3,
+.home-page-why-monogram-section-left-content-details2 h3,
+.home-page-why-monogram-section-right-content-details1 h3,
+.home-page-why-monogram-section-right-content-details2 h3 {
+  color: #1a2456;
+  font-weight: 600;
+  line-height: 1.2;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+.home-page-why-monogram-section-left-content-details1 p,
+.home-page-why-monogram-section-left-content-details2 p,
+.home-page-why-monogram-section-right-content-details1 p,
+.home-page-why-monogram-section-right-content-details2 p {
+  margin: 0;
+  width: 100%;
+  color: #1a2456;
+  font-size: 20px;
+}
+
+/* Responsive Behavior */
+@media screen and (max-width: 768px) {
+  .home-page-why-monogram-section-left-content-img1,
+  .home-page-why-monogram-section-left-content-img2,
+  .home-page-why-monogram-section-left-content-img3,
+  .home-page-why-monogram-section-right-content-img1,
+  .home-page-why-monogram-section-right-content-img2,
+  .home-page-why-monogram-section-right-content-img3 {
+    height: 300px;
   }
 
-  .left-column-monogram,
-  .right-column-monogram {
-    width: 100%;
+  .home-page-why-monogram-section-left-content-img1 img,
+  .home-page-why-monogram-section-left-content-img2 img,
+  .home-page-why-monogram-section-left-content-img3 img,
+  .home-page-why-monogram-section-right-content-img1 img,
+  .home-page-why-monogram-section-right-content-img2 img,
+  .home-page-why-monogram-section-right-content-img3 img {
+    height: 100%;
   }
-
-  .image-monogram {
-    height: auto;
+  .home-page-why-monogram-section-left-content-details1,
+  .home-page-why-monogram-section-left-content-details2,
+  .home-page-why-monogram-section-right-content-details1,
+  .home-page-why-monogram-section-right-content-details2 {
+    padding: 3rem 0.5rem;
+    height: 300px;
   }
+  .home-page-why-monogram-section-left-content-details1 h3,
+  .home-page-why-monogram-section-left-content-details2 h3,
+  .home-page-why-monogram-section-right-content-details1 h3,
+  .home-page-why-monogram-section-right-content-details2 h3 {
+    font-size: 20px;
+  }
+  .home-page-why-monogram-section-left-content-details1 p,
+  .home-page-why-monogram-section-left-content-details2 p,
+  .home-page-why-monogram-section-right-content-details1 p,
+  .home-page-why-monogram-section-right-content-details2 p {
+    font-size: 14px;
+    text-align: justify;
+  } 
 }

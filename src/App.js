@@ -12,6 +12,7 @@ import Footer from "./components/Footer";
 import Home from "./components/Home";
 import HowItWork from "./components/HowItWork";
 import Download from "./components/Download";
+import Blog from "./components/Blog";
 
 function App() {
 	return (
@@ -22,6 +23,7 @@ function App() {
 					<Route path="/" element={<Home />} />
 					<Route exact path="/howitwork" element={<HowItWork />} />
 					<Route exact path="/download" element={<Download />} />
+					<Route exact path="/blog" element={<Blog />} />
 				</Routes>
 				<Footer />
 			</BrowserRouter>

@@ -1,0 +1,54 @@
+.monogram-press-container {
+  background-image: url('../../images//blog//topimage.jpg');
+  /* Replace with your image URL */
+  background-size: cover;
+  background-position: center;
+  height: 40vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.monogram-press-content {
+  text-align: center;
+  color: black;
+  font-weight: 900;
+  /* Add a semi-transparent background for better readability */
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.monogram-press-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.monogram-press-content p {
+  font-size: 1.2rem;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .monogram-press-content h1 {
+    font-size: 2rem;
+  }
+
+  .monogram-press-content p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 425px) {
+  .monogram-press-content h1 {
+    font-size: 1.5rem;
+  }
+
+  .monogram-press-content p {
+    font-size: 0.9rem;
+  }
+}

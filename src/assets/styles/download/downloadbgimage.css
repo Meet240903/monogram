@@ -48,6 +48,10 @@ html {
 
 /* For tablets and smaller laptops */
 @media (max-width: 1024px) {
+  .download-bg-content {
+    margin-left: 0;
+  }
+
   .download-bg-content h1 {
     font-size: 2.5rem;
   }
