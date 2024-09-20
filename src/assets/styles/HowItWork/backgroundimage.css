@@ -1,0 +1,142 @@
+/* General Styles */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Background Image Section */
+.bg-image-section {
+  background-image: url('../../images/HowItWork/expereince.webp');
+  /* Replace with your image URL */
+  background-size: cover;
+  background-position: center right;
+  /* Focus on the right side of the image */
+  /* background-attachment: fixed; */
+  width: 100%;
+  height: 40vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  /* Content aligned to the right */
+}
+
+/* Content inside the image */
+.bg-content {
+  padding: 20px;
+  color: #1a2456;
+  text-align: center;
+  width: 50%;
+  /* Content box width */
+  margin-right: 30px;
+  border-radius: 10px;
+}
+
+/* Headline and Paragraph Styling */
+.bg-content h1 {
+  font-size: 2.9rem;
+  margin-bottom: 10px;
+}
+
+.bg-content p {
+  color: #1a2456;
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+}
+
+/* Shop Now Button */
+.btn-shop {
+  padding: 10px 20px;
+  border: none;
+  background-color: #1a2456;
+  /* Button color */
+  color: #fff;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-shop:hover {
+  background-color: #1a2440;
+}
+
+/* Responsive Design */
+
+/* For tablets and smaller laptops */
+@media (max-width: 1024px) {
+  .bg-image-section {
+    background-size: cover;
+    background-position: center right;
+    /* Focus on the right side for smaller screens */
+  }
+
+  .bg-content {
+    width: 60%;
+    /* Adjust content width */
+    margin-right: 20px;
+  }
+
+  .bg-content h1 {
+    font-size: 2rem;
+  }
+
+  .bg-content p {
+    font-size: 1rem;
+  }
+}
+
+/* For mobile phones in landscape mode */
+@media (max-width: 768px) {
+  .bg-image-section {
+    background-position: center right;
+    /* Maintain focus on the right */
+  }
+
+  .bg-content {
+    width: 70%;
+    margin-right: 15px;
+  }
+
+  .bg-content h1 {
+    font-size: 1.8rem;
+  }
+
+  .bg-content p {
+    font-size: 1rem;
+  }
+}
+
+/* For small mobile phones (portrait mode) */
+@media (max-width: 425px) {
+  .bg-image-section {
+    height: 50vh;
+    /* Adjust height for small screens */
+    background-position: right center;
+    /* Focus more on the right */
+    background-size: 220%;
+    /* Ensures the left side gets cut */
+    background-repeat: no-repeat;
+  }
+
+  .bg-content {
+    width: 85%;
+    margin-right: 10px;
+  }
+
+  .bg-content h1 {
+    font-size: 1.5rem;
+  }
+
+  .bg-content p {
+    font-size: 0.9rem;
+  }
+
+  .btn-shop {
+    font-size: 0.9rem;
+    padding: 8px 15px;
+  }
+}

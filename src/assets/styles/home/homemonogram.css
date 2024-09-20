@@ -1,0 +1,70 @@
+/* Scroll Container */
+.scroll-container-monogram {
+  display: flex;
+  width: 100%;
+  height: 200vh;
+  /* Extend the height to allow scrolling */
+  position: relative;
+}
+
+/* Left Column */
+.left-column-monogram {
+  width: 50%;
+  position: relative;
+}
+
+.left-column-monogram .image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.left-column-monogram .image.stopped {
+  position: sticky;
+  top: 0;
+  /* Make it sticky at the top */
+}
+
+.left-column-monogram .image.scrolling {
+  position: relative;
+}
+
+/* Right Column */
+.right-column-monogram {
+  width: 50%;
+  position: relative;
+}
+
+.right-column-monogram .image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.right-column-monogram .image.stopped {
+  position: sticky;
+  top: 0;
+  /* Make it sticky at the top */
+}
+
+.right-column-monogram .image.scrolling {
+  position: relative;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .scroll-container-monogram {
+    flex-direction: column;
+  }
+
+  .left-column-monogram,
+  .right-column-monogram {
+    width: 100%;
+  }
+
+  .image-monogram {
+    height: auto;
+  }
+}

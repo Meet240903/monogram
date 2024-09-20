@@ -1,0 +1,227 @@
+.landing-page {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color: #1a2456;
+  margin: 0;
+  padding: 0;
+}
+
+/* Main Image Section */
+.main-image-section {
+  height: 30vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.down-arrow {
+  font-size: 3rem;
+  cursor: pointer;
+  position: absolute;
+  bottom: 2%;
+  color: white;
+}
+
+/* Content Section */
+.content-section {
+  padding: 50px 20px;
+  text-align: center;
+  color: #ff8b68;
+}
+
+.content-section h2 {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+}
+
+.content-section p {
+  font-size: 1.6rem;
+  margin-bottom: 30px;
+}
+
+/* Steps Row */
+.steps-row {
+  color: #1a2456;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+/* Each Step Item */
+.step-item {
+  flex: 1 1 calc(33.33% - 20px);
+  opacity: 0;
+  transform: translateX(100%);
+  transition: opacity 1s ease, transform 1s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.step-item.slide-in {
+  opacity: 1;
+  transform: translateX(0%);
+}
+
+.hidden {
+  opacity: 0;
+  transform: translateX(100%);
+}
+
+.step-image {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.step-content {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  width: 90%;
+  position: absolute;
+  bottom: 20px;
+  z-index: 2;
+}
+
+.step-content h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.step-content p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.buttons {
+  margin-top: 10px;
+}
+
+.btn {
+  padding: 10px 15px;
+  margin: 5px;
+  border: none;
+  background-color: #1a2456;
+  color: white;
+
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+.btn:hover {
+  background-color: #0e1327;
+}
+
+/* Responsive Design */
+
+/* Medium devices (tablets and small laptops) */
+@media (max-width: 1024px) {
+  .content-section h2 {
+    font-size: 2rem;
+  }
+
+  .content-section p {
+    font-size: 1.4rem;
+  }
+
+  .step-item {
+    flex: 1 1 calc(45% - 20px);
+  }
+
+  .step-image {
+    height: 250px;
+  }
+}
+
+/* Small devices (mobile phones in landscape) */
+@media (max-width: 768px) {
+  .steps-row {
+    justify-content: center;
+  }
+
+  .step-item {
+    flex: 1 1 calc(48% - 20px);
+    margin-bottom: 20px;
+  }
+
+  .step-image {
+    height: 200px;
+  }
+
+  .content-section h2 {
+    font-size: 1.8rem;
+  }
+
+  .content-section p {
+    font-size: 1.2rem;
+  }
+}
+
+/* Extra small devices (mobile phones in portrait) */
+@media (max-width: 425px) {
+  .down-arrow {
+    font-size: 2rem;
+  }
+
+  .steps-row {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .step-item {
+    flex: 1 1 100%;
+  }
+
+  .step-image {
+    height: 180px;
+  }
+
+  .step-content h3 {
+    font-size: 1.2rem;
+  }
+
+  .step-content p {
+    font-size: 0.9rem;
+  }
+
+  .btn {
+    padding: 8px 12px;
+  }
+}
+
+/* Very small devices (extra-small phones) */
+@media (max-width: 320px) {
+  .main-image-section {
+    height: 80vh;
+  }
+
+  .content-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .content-section p {
+    font-size: 1rem;
+  }
+
+  .step-image {
+    height: 150px;
+  }
+
+  .step-content {
+    padding: 15px;
+  }
+
+  .btn {
+    padding: 6px 10px;
+    font-size: 0.9rem;
+  }
+}

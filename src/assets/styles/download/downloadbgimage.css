@@ -1,0 +1,84 @@
+/* General Styles */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Background Image Section */
+.download-bg-image-section {
+  background-image: url('../../images/download/download_top.webp');
+  /* Replace with your image URL */
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 30vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  /* Content aligned to the left */
+  padding-left: 20px;
+  color: white;
+}
+
+/* Content inside the image */
+.download-bg-content {
+  text-transform: uppercase;
+  color: white;
+  margin-left: auto;
+  margin-right: auto;
+  width: 55%;
+}
+
+.download-bg-content h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.download-bg-content p {
+  font-size: 1.6rem;
+  color: white;
+  margin: 10px 0 0 0;
+}
+
+/* Responsive Design */
+
+/* For tablets and smaller laptops */
+@media (max-width: 1024px) {
+  .download-bg-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .download-bg-content p {
+    font-size: 1.2rem;
+  }
+}
+
+/* For mobile phones in landscape mode */
+@media (max-width: 768px) {
+  .download-bg-content h1 {
+    font-size: 2rem;
+  }
+
+  .download-bg-content p {
+    font-size: 1rem;
+  }
+}
+
+/* For small mobile phones (portrait mode) */
+@media (max-width: 425px) {
+  .download-bg-image-section {
+    height: 50vh;
+  }
+
+  .download-bg-content h1 {
+    font-size: 1.8rem;
+  }
+
+  .download-bg-content p {
+    font-size: 0.9rem;
+  }
+}

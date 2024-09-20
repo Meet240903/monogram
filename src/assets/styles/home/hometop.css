@@ -1,0 +1,190 @@
+/* General styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100%;
+  font-family: 'Arial', sans-serif;
+}
+
+.app.dark {
+  background-color: #111;
+  transition: background-color 0.3s ease;
+}
+
+.app.light {
+  background-color: #f5f5f5;
+  transition: background-color 0.3s ease;
+}
+
+.background {
+  height: 70vh;
+  background-image: url('../../images/home/home_top.webp');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* The pseudo-element will provide the dark overlay */
+}
+
+.background::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  /* Adjust the darkness here */
+  z-index: 0;
+  transition: background-color 2s ease;
+}
+
+.background.light::before {
+  background-color: rgba(0, 0, 0, 0.2);
+  /* Lighter overlay for light mode */
+}
+
+.background.dark::before {
+  background-color: rgba(0, 0, 0, 0.9);
+  /* Darker overlay for dark mode */
+}
+
+.center-content {
+  text-align: center;
+  color: #efc2b3;
+  position: relative;
+  z-index: 1;
+  /* Ensure the content stays above the background */
+}
+
+.center-content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.center-content h2 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.center-content p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.button-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.btn {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 25px;
+  background-color: #ff8b68;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #ff7050;
+}
+
+.down-arrow-hometop {
+  font-size: 2rem;
+  color: #ff8b68;
+  margin-top: 100px;
+  cursor: pointer;
+}
+
+.info-section {
+  background-color: #efc2b3;
+  padding: 15rem 5rem;
+  text-align: center;
+  color: white;
+  left: 0;
+  right: 0;
+  transition: transform 0.5s ease;
+  transform: translateY(100%);
+  z-index: 2;
+}
+
+.info-section h2,
+p {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.info-section h2 {
+  text-transform: uppercase;
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+.info-section p {
+  font-size: 1.5rem;
+  color: black;
+  margin-bottom: 2rem;
+}
+
+.info-section.show {
+  transform: translateY(0);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .center-content h1 {
+    font-size: 2rem;
+  }
+
+  .center-content h2 {
+    font-size: 1.5rem;
+  }
+
+  .center-content p {
+    font-size: 1rem;
+  }
+
+  .btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  .down-arrow {
+    font-size: 1.5rem;
+  }
+
+  .info-section {
+    padding: 5rem 2rem;
+  }
+
+  .info-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .info-section p {
+    font-size: 1rem;
+  }
+
+  .info-section h2,
+  p {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
