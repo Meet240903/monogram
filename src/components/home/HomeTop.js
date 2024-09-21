@@ -36,9 +36,9 @@ const HomeTop = () => {
 						<h1>Monogram</h1>
 						<h2>Creative Console</h2>
 						<p>Simple. Powerful. Adaptable. A better way to create.</p>
-						<div className="button-container">
-							<button className="btn">Watch the Video</button>
-							<button className="btn">Shop Now</button>
+						<div className="home-top-button-container">
+							<button>Watch the Video</button>
+							<button>Shop Now</button>
 						</div>
 						<div className="down-arrow-hometop" onClick={handleArrowClick}>
 							<FontAwesomeIcon icon={faAngleDown} />

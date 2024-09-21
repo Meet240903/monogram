@@ -1,0 +1,130 @@
+.home-page-meet-module-section-container {
+    background-color: #1a2456;
+    padding: 12rem 20rem;
+}
+
+.home-page-meet-module-section-title {
+    text-align: center;
+}
+
+.home-page-meet-module-section-title h1 {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #efc2b3;
+    margin: 0;
+}
+
+.home-page-meet-module-section-content {
+    margin: 10rem 0 !important;
+    align-items: center;
+}
+
+.home-page-meet-module-section-left-content {
+    text-align: center;
+}
+
+.home-page-meet-module-section-left-content img {
+    height: 400px;
+}
+
+.home-page-meet-module-section-right-content h1 {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.home-page-meet-module-section-right-content p {
+    margin: 0;
+    width: 100%;
+    color: #efc2b3;
+}
+
+.home-page-meet-module-section-content-scrollbar {
+    height: 90vh;
+    overflow: hidden;
+    overflow-y: scroll;
+    margin: 5rem 0;
+}
+
+.home-page-meet-module-section-content-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+/* Animation Styles */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in {
+    animation: fadeIn 1s ease forwards;
+}
+
+.home-page-meet-module-bottom-section-container{
+    text-align: center;
+}
+
+.home-page-meet-module-bottom-section-container h2{
+    font-size: 30px;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 2rem;
+}
+
+.home-page-meet-module-bottom-section-container p{
+    width: 100%;
+    color: #efc2b3;
+    font-size: 20px;
+    line-height: 2rem;
+    margin: 2rem 0;
+}
+
+.home-page-meet-module-bottom-section-container button{
+    background-color: #efc2b3;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 50px;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .home-page-meet-module-section-container {
+        padding: 8rem 2rem;
+    }
+
+    .home-page-meet-module-section-left-content img {
+        height: 300px;
+    }
+
+    .home-page-meet-module-section-title h1 {
+        font-size: 1.5rem;
+    }
+
+    .home-page-meet-module-section-right-content h1 {
+        font-size: 1.2rem;
+    }
+
+    .home-page-meet-module-section-right-content p {
+        font-size: 0.9rem;
+    }
+    .home-page-meet-module-section-content-scrollbar {
+        margin: 2rem 0;
+    }
+    .home-page-meet-module-bottom-section-container h2{
+        font-size: 20px;
+    }
+    .home-page-meet-module-bottom-section-container p{
+        font-size: 18px;
+        text-align: justify;
+    }
+}

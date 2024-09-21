@@ -88,6 +88,11 @@
   display: none;
 }
 
+.shopping-bag {
+  font-size: 1.7rem;
+  margin-right: 0.5rem;
+}
+
 @media (max-width: 768px) {
   .nav-links-container {
     flex-direction: column;
@@ -133,4 +138,7 @@
     white-space: nowrap;
   }
 
+  .shopping-bag {
+    margin-left: 0;
+  }
 }

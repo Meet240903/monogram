@@ -1,0 +1,72 @@
+.home-page-our-gaurantee-section-container {
+  background-image: url("../../images/home/ourGauranteeSectionImgs/bgImg.webp");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 10rem 0;
+  position: relative;
+  /* Added for positioning the overlay */
+}
+
+.home-page-our-gaurantee-section-overlay {
+  position: absolute;
+  /* Overlay will be positioned absolutely */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(26, 36, 86, 0.75);
+  /* Transparent blue */
+  z-index: 1;
+  /* Ensure overlay is above the background image */
+}
+
+.home-page-our-gaurantee-section-content {
+  max-width: 700px;
+  margin: 0 auto;
+  position: relative;
+  /* Added to ensure content appears above the overlay */
+  z-index: 2;
+  /* Content should be above the overlay */
+}
+
+.home-page-our-gaurantee-section-content-img {
+  text-align: center;
+}
+
+.home-page-our-gaurantee-section-content img {
+  height: 250px;
+}
+
+.home-page-our-gaurantee-section-content p {
+  width: 100%;
+  color: #efc2b3;
+  font-size: 18px;
+  line-height: 2rem;
+  text-align: justify;
+}
+
+.home-page-our-gaurantee-section-content-button {
+  text-align: center;
+}
+
+.home-page-our-gaurantee-section-content-button button {
+  background-color: #efc2b3;
+  border: none;
+  border-radius: 25px;
+  padding: 10px 40px;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: 0.5s ease-in-out;
+}
+
+.home-page-our-gaurantee-section-content-button button:hover {
+  background-color: #e8a993;
+}
+
+@media (max-width: 768px) {
+  .home-page-our-gaurantee-section-container {
+    padding: 1rem;
+  }
+}

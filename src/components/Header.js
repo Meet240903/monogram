@@ -8,6 +8,7 @@ import {
 	faBars,
 	faTimes,
 	faRadio,
+	faShoppingBag,
 } from "@fortawesome/free-solid-svg-icons"; // Add faBars and faTimes
 import { Link } from "react-router-dom";
 const Header = () => {
@@ -21,7 +22,11 @@ const Header = () => {
 				{/* Left side: Logo */}
 				<div className="logo-container">
 					<FontAwesomeIcon icon={faRadio} size="2x" />
-					<Link to="/" className="logo-container">
+					<Link
+						to="/"
+						className="logo-container"
+						onClick={() => setMenuOpen(false)}
+					>
 						monogram
 					</Link>
 				</div>
@@ -37,7 +42,7 @@ const Header = () => {
 				{/* Right side: Navigation */}
 				<ul className={`nav-links-container ${menuOpen ? "active" : ""}`}>
 					<li>
-						<Link to="/howitwork">
+						<Link to="/howitwork" onClick={() => setMenuOpen(false)}>
 							<a href="#how-it-works">How it Works</a>
 						</Link>
 					</li>
@@ -70,21 +75,25 @@ const Header = () => {
 						)}
 					</li>
 					<li>
-						<Link to="/download">
+						<Link to="/download" onClick={() => setMenuOpen(false)}>
 							<a href="#download">Download</a>
 						</Link>
 					</li>
 					<li>
 						{" "}
-						<Link to="/blog">
+						<Link to="/blog" onClick={() => setMenuOpen(false)}>
 							<a href="#blog">Blog</a>
 						</Link>
 					</li>
 					<li>
-						<a href="#support">Support</a>
+						<a href="#support" onClick={() => setMenuOpen(false)}>
+							Support
+						</a>
 					</li>
 					<li>
-						<a href="#shop">Shop</a>
+						<a href="#shop" onClick={() => setMenuOpen(false)}>
+							Shop
+						</a>
 					</li>
 					<li
 						className="submenu-container"
@@ -92,6 +101,9 @@ const Header = () => {
 						onMouseLeave={() => setShowCurrencyMenu(false)}
 					>
 						<a href="#currency">
+							{" "}
+							<FontAwesomeIcon icon={faShoppingBag} className="shopping-bag" />
+							{"  "}
 							USD{" "}
 							<FontAwesomeIcon
 								icon={showCurrencyMenu ? faChevronUp : faChevronDown}

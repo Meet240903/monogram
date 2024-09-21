@@ -1,0 +1,146 @@
+/* Container Styling */
+.home-page-software-integration-section-container {
+  background-color: #1a2456;
+  padding: 8rem 0;
+}
+
+.home-page-software-integration-section-title {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto;
+  margin-bottom: 6rem;
+}
+
+.home-page-software-integration-section-title h2 {
+  font-weight: bold;
+  color: #efc2b3;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+}
+
+.home-page-software-integration-section-title p {
+  font-size: 1.2rem;
+  color: #efc2b3;
+  line-height: 1.8rem;
+  width: 100%;
+}
+
+/* Background Image */
+.home-page-software-integration-section-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
+}
+
+.home-page-software-integration-section-bgimg {
+  position: relative;
+  display: inline-block;
+}
+
+.software-integration-section-bgimg {
+  max-width: 100%;
+  height: 300px;
+}
+
+/* Slider Styling */
+.home-page-software-integration-section-slider {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+  height: 100px;
+  background-color: #484848;
+  padding: 20px;
+}
+
+.software-integration-section-slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.5s ease-in-out;
+  opacity: 1;
+}
+
+.software-integration-section-slider.animating {
+  opacity: 0; /* Add fade-out effect before switching slides */
+}
+
+.software-integration-slider-img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Buttons Styling */
+.software-integration-section-slider-btn {
+  background-color: #2f2f2f;
+  border: none;
+  color: #d0d0d0;
+  font-size: 12px;
+  padding: 0.5rem;
+  border-radius: 2px;
+  cursor: pointer;
+  position: absolute;
+  top: 125px;
+  transform: translateY(-50%);
+  padding: 0;
+  width: 50px;
+}
+
+.software-integration-section-prev-btn {
+  left: 0;
+}
+
+.software-integration-section-next-btn {
+  right: 0;
+}
+
+/* Responsive Behavior */
+@media (max-width: 768px) {
+  .home-page-software-integration-section-container {
+    padding: 3rem 1rem;
+  }
+  .home-page-software-integration-section-title h2 {
+    font-size: 2rem;
+  }
+
+  .home-page-software-integration-section-title p {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .home-page-software-integration-section-slider {
+    width: 120px;
+    height: 100px;
+  }
+
+  .software-integration-section-prev-btn {
+    left: 0;
+  }
+  .software-integration-section-next-btn {
+    right: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .home-page-software-integration-section-title h2 {
+    font-size: 1.5rem;
+  }
+
+  .home-page-software-integration-section-title p {
+    font-size: 0.9rem;
+  }
+
+  .home-page-software-integration-section-slider {
+    width: 100px;
+    height: 100px;
+  }
+
+  .software-integration-section-prev-btn {
+    left: 0;
+  }
+  .software-integration-section-next-btn {
+    right: 0;
+  }
+}

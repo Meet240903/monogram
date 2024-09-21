@@ -92,3 +92,17 @@ html {
     font-size: 0.9rem;
   }
 }
+
+@media (max-width: 768px) {
+  .content-scrolling {
+    color: #1a2456;
+  }
+
+  .content-scrolling h1 {
+    font-size: 2rem;
+  }
+
+  .content-scrolling p {
+    font-size: 1rem;
+  }
+}

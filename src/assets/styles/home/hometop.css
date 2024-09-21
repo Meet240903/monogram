@@ -82,25 +82,25 @@ html {
   margin-bottom: 2rem;
 }
 
-.button-container {
+.home-top-button-container {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 1rem;
 }
 
-.btn {
+.home-top-button-container button {
   padding: 0.75rem 1.5rem;
   border: none;
   border-radius: 25px;
-  background-color: #ff8b68;
+  background-color: #ff8b68 !important;
   color: white;
   font-size: 1rem;
   cursor: pointer;
   transition: background-color 0.3s;
 }
 
-.btn:hover {
+.home-top-button-container button:hover {
   background-color: #ff7050;
 }
 
@@ -160,7 +160,7 @@ p {
     font-size: 1rem;
   }
 
-  .btn {
+  .home_top_btn {
     padding: 0.5rem 1rem;
     font-size: 0.9rem;
   }
