@@ -1,0 +1,54 @@
+.sign-up-page-section-container {
+  max-width: 450px;
+  margin: 0 auto;
+  border: 5px solid lightgray;
+  transform: translateY(20%);
+  padding: 40px;
+}
+
+.sign-up-page-section-title {
+  text-align: center;
+}
+
+.sign-up-page-section-title p {
+  width: 100%;
+  margin: 10px 0;
+}
+
+.sign-up-page-section-title small {
+  font-size: 12px;
+}
+
+.sign-up-section-form {
+  margin-top: 20px;
+}
+
+.sign-up-section-form-group label {
+  font-size: 14px;
+}
+
+.sign-up-page-footer-section {
+  text-align: right;
+  margin-top: 5px;
+}
+
+.sign-up-page-footer-section a {
+  font-size: 14px;
+  color: #000;
+  text-decoration: none;
+}
+
+.sign-up-page-footer-section a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .sign-up-page-section-container {
+    padding: 10px;
+    margin: 0 10px;
+  }
+  .sign-in-page-section-left-content {
+    border: none;
+    border-bottom: 1px solid lightgray;
+  }
+}

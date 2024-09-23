@@ -1,0 +1,42 @@
+.support-home-page-bottom-section-container{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+.support-home-page-bottom-section-container h2{
+    font-size: 30px;
+    margin: 10px 0;
+}
+
+.support-home-page-bottom-section-container p{
+    width: 100%;
+}
+
+.support-home-page-bottom-section-container button{
+    background-color: rgba(0, 30, 97, 1);
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: 600;
+    padding: 10px 20px;
+}
+
+.support-home-page-bottom-section-container button:hover{
+    background-color: #000;
+}
+
+.support-home-page-bottom-section-container a{
+    text-decoration: none;
+}
+
+.support-home-page-bottom-section-container a:hover{
+    color: rgba(0, 30, 97, 1);
+    text-decoration: underline;
+}
+
+@media (max-width:768px) {
+    .support-home-page-bottom-section-container{
+        padding: 10px;
+    }
+}

@@ -1,0 +1,77 @@
+.support-community-page-bottom-section-container {
+  max-width: 1100px;
+  margin: 2rem auto;
+  padding: 20px;
+}
+
+.support-community-page-bottom-section-title {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.support-community-page-bottom-section-title h4 {
+  font-size: 30px;
+}
+
+.support-community-page-bottom-section-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2rem 0;
+  padding: 20px 0;
+  border-bottom: 1px solid lightgray;
+}
+
+.support-community-page-bottom-section-left-content p {
+  width: 100%;
+  margin: 0;
+  color: rgba(0, 30, 97, 1);
+}
+
+.support-community-page-bottom-section-left-content a {
+  color: rgba(0, 30, 97, 1);
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.support-community-page-bottom-section-left-content p:hover,
+.support-community-page-bottom-section-left-content a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.support-community-page-bottom-section-bottom-body {
+  text-align: center;
+  margin: 4rem 0;
+}
+
+.support-community-page-bottom-section-bottom-body p {
+  width: 100%;
+  margin: 10px 0;
+  font-size: 18px;
+}
+
+.support-community-page-bottom-section-bottom-body button {
+  background-color: rgba(0, 30, 97, 1);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 40px;
+}
+
+.support-community-page-bottom-section-bottom-body button:hover {
+  background-color: #000;
+}
+
+@media (max-width: 768px) {
+  .support-community-page-bottom-section-title h4 {
+    font-size: 25px;
+  }
+  .support-community-page-bottom-section-content {
+    flex-direction: column;
+  }
+  .support-community-page-bottom-section-left-content{
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+}

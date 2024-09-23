@@ -1,0 +1,36 @@
+.support-home-page-top-section-container{
+    background-image: url('../../../images/supportImgs/homeSectionImgs/bgImg.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 10rem;
+    text-align: center;
+}
+
+.support-home-page-top-section-content{
+    max-width: 600px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.support-home-page-top-section-content input{
+    border: none;
+    border-radius: 12px;
+    background-color: #fff;
+    padding: 10px 3rem;
+    width: 100%;
+}
+
+.support-home-page-top-section-search-icon{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 10px;
+    color: lightgray;
+}
+
+@media (max-width:768px) {
+    .support-home-page-top-section-container{
+        padding: 10rem 1rem;
+    }
+}

@@ -1,0 +1,127 @@
+.support-request-section-container {
+  max-width: 1100px;
+  margin: 1rem auto;
+  padding: 20px;
+}
+
+.support-request-section-left-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.support-request-section-right-content-input-field {
+  text-align: center;
+  position: relative;
+}
+
+.support-request-section-right-content-input-field input {
+  border-radius: 5px;
+  border: 1px solid lightgray;
+  width: 100%;
+  padding: 10px 50px;
+  font-size: 18px;
+}
+
+.support-request-section-right-content-search-icon {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: lightgray;
+}
+
+/* Form Styles */
+.support-request-section-content-form {
+  margin-top: 20px;
+  max-width: 600px;
+}
+
+.support-request-section-content-form h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.support-request-section-form-group {
+  margin-bottom: 20px;
+}
+
+.support-request-section-form-group label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.support-request-section-form-group .required {
+  color: red;
+}
+
+.support-request-section-form-control {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+textarea.support-request-section-form-control {
+  resize: none;
+  height: 100px;
+}
+
+.support-request-section-file-upload {
+  border: 1px dashed #ccc;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+  color: #007bff;
+  font-size: 14px;
+  background-color: #f9f9f9;
+  border-radius: 4px;
+}
+
+.support-request-section-file-upload:hover {
+  background-color: #f0f0f0;
+}
+
+/* Ensure that the file input is hidden */
+.support-request-section-form-control-file {
+  display: none;
+}
+
+.submit-btn {
+  background-color: rgba(0, 30, 97, 1);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 70px;
+}
+
+.submit-btn:hover {
+  background-color: #000;
+}
+
+.small-text {
+  font-size: 14px;
+  color: gray;
+}
+
+/* Responsive Form Adjustments */
+@media (max-width: 768px) {
+  .support-request-section-left-content {
+    flex-direction: column;
+  }
+  .support-request-section-container {
+    padding: 10px;
+  }
+
+  .support-request-section-right-content-input-field input {
+    font-size: 16px;
+    padding: 10px 40px;
+  }
+
+  .support-request-section-form-control,
+  .submit-btn {
+    font-size: 14px;
+  }
+}
